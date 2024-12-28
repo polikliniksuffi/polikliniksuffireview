@@ -1,3 +1,4 @@
+/* Your existing styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -46,3 +47,46 @@ body {
     margin-top: 20px;
     font-size: 1.2rem;
 }
+
+/* Modal styles */
+#modal {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.modal-content {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    text-align: center;
+}
+
+.close-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: To dim the background when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+
