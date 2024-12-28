@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Form</title>
-    <link rel="stylesheet" href="style.css">
-    
-       
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
 </head>
 <body>
     <div class="container">
@@ -49,7 +47,7 @@
 
             if (rating === 5) {
                 // Directly redirect to Google Review for 5-star ratings
-                window.location.href = "https://bit.ly/3ZOJjvo";
+                window.location.href = "https://bit.ly/40bBNMo";
                 return; // Stop further execution to prevent the modal from appearing
             } else {
                 // Show modal with feedback request for ratings below 5 stars
@@ -60,10 +58,12 @@
 
         function openModal() {
             document.getElementById("modal").style.display = "block";
+            document.body.classList.add("modal-open"); // Optional: to prevent scrolling when modal is open
         }
 
         function closeModal() {
             document.getElementById("modal").style.display = "none";
+            document.body.classList.remove("modal-open"); // Optional: restore body scroll
         }
     </script>
 </body>
